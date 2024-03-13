@@ -6,13 +6,16 @@ using namespace std;
 
 class Character {
 
+  // Private - viss, ko izmanto tikai iekš klases definīcijas
 private:
   string name;
   int life;
 
   char path[10] = {};
 
+  // Public - viss, ko izmanto arī ārpus klases definīcijas
 public:
+  // Constructor - just a regular function with parameters
   Character(string name, int life);
   ~Character();
 

@@ -19,7 +19,7 @@ int main() {
     Instantiating the first object of the Character class with the provided
     parameters
     */
-    Character TestCharacter1("TestCharacter1", 10);
+    Character TestCharacter1("TestCharacter1", 10); // can simply add the values
     /*
     The character should make less than 10 moves, so they're given a maximum
     of 5 moves.

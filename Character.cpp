@@ -3,6 +3,10 @@
 #include <string>
 using namespace std;
 
+// Constructor assigns some initial values for the class objects
+/*
+Upon definition, the parameter names need to be changed to avoid confusion later
+*/
 Character::Character(string characterName, int characterLife) {
   life = characterLife > 10 ? 10 : characterLife;
   name = characterName;
@@ -30,7 +34,7 @@ void Character::Go(char move) {
      at the position of the current move
     */
     if (moveCount < 10) {
-      path[moveCount] = move;
+      path[moveCount] = move; // saving the move at the current path[] index
     } else {
       /*
       If more than 10 moves have been made, the elements of the path array are
