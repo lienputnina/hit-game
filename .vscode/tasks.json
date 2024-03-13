@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build HitGame",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "${workspaceFolder}/HitGame/main.cpp",
+        "${workspaceFolder}/HitGame/Character.cpp",
+        "-o",
+        "${workspaceFolder}/HitGame/build/HitGameExecutable",
+        "-std=c++17"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
