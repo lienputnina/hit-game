@@ -54,7 +54,7 @@ void Character::Go(char move) {
         Taking the array element of the current position in the array and
         putting it in the previous position
         */
-        path[i - 1] = path[i];
+        path[i - 1] = path[i]; // path[3 -1] = path[3] => path[2] = path[3]
       }
 
       // Saving the new move to the end of the array

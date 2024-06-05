@@ -17,6 +17,12 @@ private:
 public:
   // Constructor - just a regular function with parameters
   Character(string name, int life);
+
+  /*
+  Destruktors - tiek izsaukts objekta iznīcināšanas brīdī. Pats neko neiznīcina,
+  bet izpilda objekta beigšanas operācijas pirms sistēma atbrīvo atmiņas
+  apgabalu. Parasti izmanto klasēs, kur ir darbs ar dinamisko atmiņu.
+  */
   ~Character();
 
   bool Hit(int);
